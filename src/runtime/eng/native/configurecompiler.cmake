@@ -344,7 +344,7 @@ elseif (CLR_CMAKE_HOST_ARCH_LOONGARCH64)
   # dotnet-unofficial-build: no easy way to set {C,CXX,LD}FLAGS for $CHOST
   # *only*; these leak to $CBUILD and break crosscomponents' x64 build
   # so we resort to putting them here in the sources
-  add_compile_options(-march=la64v1.0)
+  add_compile_options(-march=loongarch64)
   add_compile_options(-mtls-dialect=desc)
   add_linker_flag(-Wl,-O1)
   add_linker_flag(-Wl,--as-needed)
